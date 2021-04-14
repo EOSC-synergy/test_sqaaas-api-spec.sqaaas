@@ -1,0 +1,11 @@
+services:
+  node:
+    command: sleep 600000
+    hostname: sqaaas-api-spec-node
+    image: node
+    volumes:
+    - source: ./
+      target: /sqaaas-api-spec
+      type: bind
+    working_dir: /sqaaas-api-spec
+version: '3.7'

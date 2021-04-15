@@ -9,7 +9,7 @@ environment:
 sqa_criteria:
   qc_style:
     repos:
-      test_sqaaas-api-spec:
+      test_sqaaas-api-spec.sqaaas:
         commands:
         - npm --prefix /sqaaas-api-spec install
         - npm --prefix /sqaaas-api-spec test

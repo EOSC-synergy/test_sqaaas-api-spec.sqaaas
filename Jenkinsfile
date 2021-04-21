@@ -32,7 +32,7 @@ pipeline {
             steps {
                 script {
                     projectConfig = pipelineConfig(
-                        configFile: '.sqa/config.cozy-cream-bullfrog.yml',
+                        configFile: '.sqa/config.shaky-salmon-dragon.yml',
                         scmConfigs: [ localBranch: true ]
                     )
                     buildStages(projectConfig)

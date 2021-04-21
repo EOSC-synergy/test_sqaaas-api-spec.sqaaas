@@ -1,15 +1,15 @@
 config:
   credentials:
   - id: orviz-github-basico
-    password_var: GIT_PASS
+    password_var: JP_DOCKERPASS
     type: username_password
-    username_var: GIT_USER
+    username_var: JP_DOCKERUSER
 environment:
   JPL_DOCKERSERVER: https://hub.docker.com/
 sqa_criteria:
   qc_style:
     repos:
-      test_sqaaas-api-spec.sqaaas:
+      test_sqaaas-api-spec:
         commands:
         - npm --prefix /sqaaas-api-spec install
         - npm --prefix /sqaaas-api-spec test
